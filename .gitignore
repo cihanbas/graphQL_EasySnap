@@ -4,7 +4,7 @@
 
 # Xcode
 #
-build/
+client/build/
 *.pbxuser
 !default.pbxuser
 *.mode1v3
@@ -23,7 +23,7 @@ DerivedData
 
 # Android/IntelliJ
 #
-build/
+client/build/
 .idea
 .gradle
 local.properties
@@ -57,4 +57,5 @@ buck-out/
 *.jsbundle
 
 # CocoaPods
-/ios/Pods/
+client/ios/Pods/
+server/.env
