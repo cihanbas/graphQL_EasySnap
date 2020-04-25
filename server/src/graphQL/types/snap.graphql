@@ -1,0 +1,23 @@
+scalar Date
+type Query {
+	snap(id: ID!): Snap!
+	snaps: [Snap!]!
+}
+type Snap {
+	text: String!
+	createAt: Date!
+	user_Id: ID!
+	id: String!
+	user: User
+}
+type Mutation {
+	createSnap(data: CreateSnapInput!): Snap
+	deleteSnap(data: DeleteSnapInput!): Snap
+}
+input CreateSnapInput {
+	text: String!
+	user_Id: String!
+}
+input DeleteSnapInput {
+	id: String!
+}
